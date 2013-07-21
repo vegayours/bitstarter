@@ -7,7 +7,7 @@ app.get '/', (request, response) ->
   fs.readFile 'index.html', (err, data) ->
     response.send data.toString()
 
-port = process.env.PORT || 5000
+port = process.env.PORT || 8080
 app.listen port, () ->
   console.log "Listening on " + port
 
